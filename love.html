@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To My Love, Mer 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  body{
+    margin:0;font-family:'Inter',sans-serif;background:#fff6fb;color:#3a2b33;padding:24px;position:relative;overflow-x:hidden;
+  }
+  h1{font-family:'Playfair Display',serif;color:#ff6b9f;text-align:center;font-size:36px;margin-bottom:12px;}
+  p{font-size:16px;line-height:1.5;margin-bottom:12px;}
+  .reason{background:#ffeaf0;padding:12px 16px;margin:8px 0;border-radius:10px;}
+  .playlist, .photos{text-align:center;margin-top:24px;}
+  iframe{border-radius:12px;margin-top:12px;}
+  .photo{width:180px;height:180px;margin:8px;border-radius:14px;display:inline-block;background:linear-gradient(135deg,#ffeaf0,#fff);overflow:hidden;}
+  .photo img{width:100%;height:100%;object-fit:cover;}
+  footer{text-align:center;margin-top:32px;font-size:14px;color:#7a6b75;}
+
+  /* Floating heart animation */
+  .heart{
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#ff6b9f;
+    transform:rotate(-45deg);
+    border-radius:3px 3px 0 0;
+    animation:float 6s linear infinite;
+    opacity:0.8;
+  }
+  .heart:before, .heart:after{
+    content:"";
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#ff6b9f;
+    border-radius:50%;
+  }
+  .heart:before{left:7px;top:-7px;}
+  .heart:after{left:-7px;top:-7px;}
+  @keyframes float{
+    0%{transform:translateY(0) scale(1) rotate(-45deg);opacity:0.8;}
+    50%{transform:translateY(-40px) scale(1.1) rotate(-45deg);opacity:0.5;}
+    100%{transform:translateY(0) scale(1) rotate(-45deg);opacity:0.8;}
+  }
+</style>
+</head>
+<body>
+  <h1>To My Love, Mer 💕</h1>
+  <p>Every time I think of you, my world brightens a little. Here’s a little page made with all my love, just for you.</p>
+  
+  <h2 style="color:#ff6b9f;text-align:center;">20 Reasons Why I Love You</h2>
+  <div>
+    <div class="reason">1. Your smile lights up even my darkest days.</div>
+    <div class="reason">2. The way you laugh is pure magic.</div>
+    <div class="reason">3. Your heart is bigger than the universe.</div>
+    <div class="reason">4. You make ordinary moments unforgettable.</div>
+    <div class="reason">5. Your kindness inspires me every day.</div>
+    <div class="reason">6. You are my favorite adventure.</div>
+    <div class="reason">7. Your hugs feel like home.</div>
+    <div class="reason">8. The sparkle in your eyes is mesmerizing.</div>
+    <div class="reason">9. You make me a better person.</div>
+    <div class="reason">10. I love how playful and fun you are.</div>
+    <div class="reason">11. You understand me without words.</div>
+    <div class="reason">12. Every message from you feels like a treasure.</div>
+    <div class="reason">13. You are effortlessly beautiful, inside and out.</div>
+    <div class="reason">14. Your creativity amazes me.</div>
+    <div class="reason">15. You make my heart race in the sweetest way.</div>
+    <div class="reason">16. I love your quirky little habits.</div>
+    <div class="reason">17. You are my peace and my adventure all at once.</div>
+    <div class="reason">18. I love the way you say my name.</div>
+    <div class="reason">19. You make love feel like magic.</div>
+    <div class="reason">20. I love you more every single day.</div>
+  </div>
+
+  <div class="playlist">
+    <h2 style="color:#ff6b9f;">A Spotify Playlist for You</h2>
+    <iframe src="https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+  <div class="photos">
+    <h2 style="color:#ff6b9f;">Photo Album</h2>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=400&auto=format&fit=crop" alt="Romantic placeholder"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=400&auto=format&fit=crop" alt="Romantic placeholder"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop" alt="Romantic placeholder"></div>
+  </div>
+
+  <footer>Forever yours, Wilson 💌</footer>
+
+  <script>
+    const colors = ['#ff6b9f','#ff91b3','#ffc0d1'];
+    for(let i=0;i<30;i++){
+      const heart = document.createElement('div');
+      heart.className='heart';
+      heart.style.left=Math.random()*100+'%';
+      heart.style.animationDuration=(4+Math.random()*3)+'s';
+      heart.style.background=colors[Math.floor(Math.random()*colors.length)];
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
